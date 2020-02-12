@@ -1,0 +1,10 @@
+---
+kind: pipeline
+name: default
+
+steps:
+- name: nc-test
+  image: cryptocom/chain-test:latest
+  pull: if-not-exists
+  commands:
+  - ./nc.sh
