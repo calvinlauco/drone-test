@@ -8,5 +8,5 @@ steps:
   pull: if-not-exists
   commands:
   - apt update
-  - apt install netcat -y
+  - apt install net-tools netcat -y
   - ./nc.sh
