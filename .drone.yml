@@ -7,4 +7,5 @@ steps:
   image: cryptocom/chain-test:latest
   pull: if-not-exists
   commands:
+  - apt install nc -y
   - ./nc.sh
