@@ -7,5 +7,6 @@ steps:
   image: cryptocom/chain-test:latest
   pull: if-not-exists
   commands:
+  - apt get update
   - apt install netcat -y
   - ./nc.sh
